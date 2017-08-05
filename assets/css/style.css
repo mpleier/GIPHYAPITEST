@@ -1,0 +1,22 @@
+button,
+div,
+form,
+input {
+  margin: 10px;
+}
+
+#display {
+flex-basis: -webkit-appearance: auto;
+-moz-appearance: auto;
+appearance: auto;
+padding-lef: 10px;
+}
+
+#wrap {
+  display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+#addimal{
+  float: right;
+}
