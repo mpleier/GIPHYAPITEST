@@ -35,7 +35,7 @@ for (i = 0; i<10; i++){
             console.log("success got data", t);
             $("[id^=image]").html(function() {
                 var e = $(this).attr("value");
-                return "<img src='" + data.data[e].images.fixed_height_still.url + "'><br>Rating: ''" + data.data[e].rating;
+                return "<img src='" + data.data[e].images.fixed_height_still.url + "'><br>Rating: " + data.data[e].rating;
             });
         });
 
