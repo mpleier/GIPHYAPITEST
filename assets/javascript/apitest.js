@@ -2,6 +2,7 @@ var topics = ["dog", "cat", "rabbit", "hamster", "skunk", "goldfish", "bird", "f
 var t = "fixed_height_still";
 var data = "error";
 var name = "cat";
+var added = [];
 
 $(document).ready(function() {
 
@@ -64,10 +65,12 @@ for (i = 0; i<10; i++){
 
 
     $("#addimal").submit(function( event ) {
-
+      var x = addButton($( "input:first" ).val());
       event.preventDefault();
-      $("#topics").append(addButton($( "input:first" ).val()));
-
+      if (!added.includes(x)){
+        added.push(x);
+        $("#topics").append(x);
+      }
     });
 
 
